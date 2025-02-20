@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Task</title>
+</head>
+<body>
+
+    <div>
+        <label>Num One</label>
+        <input type="text" id="numOne" placeholder="enter the num one"><br>
+        <label>Num Two</label>
+        <input type="text" id="numTwo" placeholder="enter the num one">
+
+        <button id="calculate">calculate</button>
+
+        <p id="result"></p>
+    </div>
+    
+
+    <script>
+        const add = document.getElementById('calculate');
+        const result = document.getElementById('result');
+
+        calculate.addEventListener('click', () => {
+            const numOne = document.getElementById('numOne').value;
+            const numTwo = document.getElementById('numTwo').value;
+
+            numberOne = Number(numOne);
+            numberTwo = Number(numTwo);
+
+            if (numberOne == '' || numberTwo == '') {
+                result.textContent = "please enter the number"        
+            } else {
+                
+            const Addition = numberOne + numberTwo;
+            result.textContent = Addition; 
+
+            }
+        } )
+
+
+
+    </script>
+</body>
+</html>
